@@ -13,7 +13,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:      
        server: vecan.co
-       username: root
+       username: u671633553.root
        password: ${{ secrets.WECANLEARN_FTP_PASSWORD }}
        port: 21
 
