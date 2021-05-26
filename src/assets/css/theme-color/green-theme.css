@@ -57,12 +57,12 @@ Author URI : http://www.markups.io/
 }
 
 #mu-features .mu-features-area .mu-features-content .mu-single-feature span {
-  color: #3fc35f;
-  border: 1px solid #3fc35f;
+  color: #29ca8e;
+  border: 1px solid #29ca8e;
 }
 #mu-features .mu-features-area .mu-features-content .mu-single-feature a:hover, #mu-features .mu-features-area .mu-features-content .mu-single-feature a:focus {
-  color: #3fc35f;
-  border-color: #3fc35f;
+  color: #29ca8e;
+  border-color: #29ca8e;
 }
 
 #mu-latest-courses .mu-latest-courses-area .mu-latest-courses-content .slick-dots .slick-active {
@@ -228,13 +228,13 @@ Author URI : http://www.markups.io/
 }
 
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget ul li a:hover, #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget ul li a:focus {
-  color: #3fc35f;
+  color: #29ca8e;
 }
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget .mu-subscribe-form input[type="email"]:focus {
-  border-color: #3fc35f;
+  border-color: #29ca8e;
 }
 #mu-footer .mu-footer-top .mu-footer-top-area .mu-footer-widget .mu-subscribe-form .mu-subscribe-btn {
-  background-color: #3fc35f;
+  background-color: #29ca8e;
 }
 
 

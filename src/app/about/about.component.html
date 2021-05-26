@@ -1,58 +1,33 @@
-  <!-- Start menu -->
-  <section id="mu-menu">
-    <nav class="navbar navbar-default" role="navigation">  
-      <div class="container">
-        <div class="navbar-header">
-          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- LOGO -->              
-          <!-- TEXT BASED LOGO -->
-          <a href="index.html"><img src="assets/img/image.png" alt=""></a>
-          <!-- IMG BASED LOGO  -->
-          <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-<<<<<<< HEAD
-            <li><a [routerLink]="['/home']">Home</a></li>   
-            <li class="active"><a [routerLink]="['/about']">About Us</a></li>          
-=======
-            <li><a [routerLink]="['/#']">Home</a></li>
-            <li><a [routerLink]="['/about']">About Us</a></li>          
-            <li><a [routerLink]="['/courses']">Courses</a></li>
-            <li><a [routerLink]="['/teachers']">Teachers</a></li> 
-            <li><a [routerLink]="['/blog']">Blog</a></li>
->>>>>>> 7bc9e3b05b2f92742cede063d061fdebd706444e
-            <li><a [routerLink]="['/contact']">Contact</a></li>
-            <li><a [routerLink]="['/login']">Login</a></li>               
-            <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
-          </ul>                     
-        </div><!--/.nav-collapse -->         
-      </div>     
-    </nav>
-  </section>
-  <!-- End menu -->
-  <!-- Start search box -->
-  <div id="mu-search">
-    <div class="mu-search-area">      
-      <button class="mu-search-close"><span class="fa fa-close"></span></button>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">            
-            <form class="mu-search-form">
-              <input type="search" placeholder="Type Your Keyword(s) & Hit Enter">              
-            </form>
-          </div>
-        </div>
-      </div>
+<!-- Start menu -->
+  <!-- MENU -->
+  <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+
+         <div class="navbar-header">
+              <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <span class="icon icon-bar"></span>
+                   <span class="icon icon-bar"></span>
+                   <span class="icon icon-bar"></span>
+              </button>
+
+              <!-- lOGO TEXT HERE -->
+              <a href="#" class="navbar-brand"><img alt="" src="assets/images/menubar.jpg" width=55 height=55></a>
+         </div>
+
+         <!-- MENU LINKS -->
+         <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-nav-first">
+                 <li><a [routerLink]="['/home']">Home</a></li>
+                 <li class="active"><a [routerLink]="['/about']">About Us</a></li>
+                 <li><a [routerLink]="['/contact']">Contact</a></li>
+                 <li><a [routerLink]="['/login']">Login</a></li>
+            </ul>
+       </div>
+
     </div>
-  </div>
-  <!-- End search box -->
+</section>
+  <!-- End menu -->
+
     <!-- Start about us -->
  <section id="mu-about-us">
     <div class="container">
@@ -80,7 +55,7 @@
               </div>
               <div class="col-lg-6 col-md-6">
                 <div class="mu-about-us-right">                            
-                  <img src="assets/img/courses-image5.jpg" alt="img">             
+                  <img src="assets/images/courses-image2.jpg" alt="img">             
                 </div>
               </div>
             </div>
@@ -90,144 +65,6 @@
     </div>
   </section>
   <!-- End about us -->
-
-
-<!-- Start latest course section -->
-<section id="mu-latest-courses">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-12">
-        <div class="mu-latest-courses-area">
-          <!-- Start Title -->
-          <div class="mu-title">
-            <h2>Latest Courses</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsa ea maxime mollitia, vitae voluptates, quod at, saepe reprehenderit totam aliquam architecto fugiat sunt animi!</p>
-          </div>
-          <!-- End Title -->
-          <!-- Start latest course content -->
-          <div id="mu-latest-course-slide" class="mu-latest-courses-content">
-            <div class="col-lg-4 col-md-4 col-xs-12">
-              <div class="mu-latest-course-single">
-                <figure class="mu-latest-course-img">
-                  <a href="#"><img src="assets/img/courses-image1.jpg" alt="img"></a>
-                  <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Drawing</a>
-                    <span><i class="fa fa-clock-o"></i>90Days</span>
-                  </figcaption>
-                </figure>
-                <div class="mu-latest-course-single-content">
-                  <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
-                  <div class="mu-latest-course-single-contbottom">
-                    <a class="mu-course-details" href="#">Details</a>
-                    <span class="mu-course-price" href="#">$165.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12">
-              <div class="mu-latest-course-single">
-                <figure class="mu-latest-course-img">
-                  <a href="#"><img src="assets/img/courses-image2.jpg" alt="img"></a>
-                  <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Engineering </a>
-                    <span><i class="fa fa-clock-o"></i>75Days</span>
-                  </figcaption>
-                </figure>
-                <div class="mu-latest-course-single-content">
-                  <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
-                  <div class="mu-latest-course-single-contbottom">
-                    <a class="mu-course-details" href="#">Details</a>
-                    <span class="mu-course-price" href="#">$165.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12">
-              <div class="mu-latest-course-single">
-                <figure class="mu-latest-course-img">
-                  <a href="#"><img src="assets/img/courses-image3.jpg" alt="img"></a>
-                  <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Academic</a>
-                    <span><i class="fa fa-clock-o"></i>45Days</span>
-                  </figcaption>
-                </figure>
-                <div class="mu-latest-course-single-content">
-                  <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
-                  <div class="mu-latest-course-single-contbottom">
-                    <a class="mu-course-details" href="#">Details</a>
-                    <span class="mu-course-price" href="#">$165.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12">
-              <div class="mu-latest-course-single">
-                <figure class="mu-latest-course-img">
-                  <a href="#"><img src="assets/img/courses-image4.jpg" alt="img"></a>
-                  <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Drawing</a>
-                    <span><i class="fa fa-clock-o"></i>90Days</span>
-                  </figcaption>
-                </figure>
-                <div class="mu-latest-course-single-content">
-                  <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
-                  <div class="mu-latest-course-single-contbottom">
-                    <a class="mu-course-details" href="#">Details</a>
-                    <span class="mu-course-price" href="#">$165.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12">
-              <div class="mu-latest-course-single">
-                <figure class="mu-latest-course-img">
-                  <a href="#"><img src="assets/img/courses-image5.jpg" alt="img"></a>
-                  <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Engineering </a>
-                    <span><i class="fa fa-clock-o"></i>75Days</span>
-                  </figcaption>
-                </figure>
-                <div class="mu-latest-course-single-content">
-                  <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
-                  <div class="mu-latest-course-single-contbottom">
-                    <a class="mu-course-details" href="#">Details</a>
-                    <span class="mu-course-price" href="#">$165.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12">
-              <div class="mu-latest-course-single">
-                <figure class="mu-latest-course-img">
-                  <a href="#"><img src="assets/img/courses-image3.jpg" alt="img"></a>
-                  <figcaption class="mu-latest-course-imgcaption">
-                    <a href="#">Academic</a>
-                    <span><i class="fa fa-clock-o"></i>45Days</span>
-                  </figcaption>
-                </figure>
-                <div class="mu-latest-course-single-content">
-                  <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
-                  <div class="mu-latest-course-single-contbottom">
-                    <a class="mu-course-details" href="#">Details</a>
-                    <span class="mu-course-price" href="#">$165.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End latest course content -->
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End latest course section -->
 
   <!-- Start our teacher -->
   <section id="mu-our-teacher">
@@ -247,7 +84,7 @@
                 <div class="col-lg-3 col-md-3  col-sm-6">
                   <div class="mu-our-teacher-single">
                     <figure class="mu-our-teacher-img">
-                      <img src="assets/img/tst-image1.jpg" alt="teacher img">
+                      <img src="assets/images/tst-image1.jpg" alt="teacher img">
                       <div class="mu-our-teacher-social">
                         <a href="#"><span class="fa fa-facebook"></span></a>
                         <a href="#"><span class="fa fa-twitter"></span></a>
@@ -265,7 +102,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                     <figure class="mu-our-teacher-img">
-                      <img src="assets/img/tst-image2.jpg" alt="teacher img">
+                      <img src="assets/images/tst-image2.jpg" alt="teacher img">
                       <div class="mu-our-teacher-social">
                         <a href="#"><span class="fa fa-facebook"></span></a>
                         <a href="#"><span class="fa fa-twitter"></span></a>
@@ -283,7 +120,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                     <figure class="mu-our-teacher-img">
-                      <img src="assets/img/tst-image3.jpg" alt="teacher img">
+                      <img src="assets/images/tst-image3.jpg" alt="teacher img">
                       <div class="mu-our-teacher-social">
                         <a href="#"><span class="fa fa-facebook"></span></a>
                         <a href="#"><span class="fa fa-twitter"></span></a>
@@ -301,7 +138,7 @@
                 <div class="col-lg-3 col-md-3 col-sm-6">
                   <div class="mu-our-teacher-single">
                     <figure class="mu-our-teacher-img">
-                      <img src="assets/img/tst-image4.jpg" alt="teacher img">
+                      <img src="assets/images/tst-image4.jpg" alt="teacher img">
                       <div class="mu-our-teacher-social">
                         <a href="#"><span class="fa fa-facebook"></span></a>
                         <a href="#"><span class="fa fa-twitter"></span></a>
@@ -325,49 +162,49 @@
     </div>
   </section>
   <!-- End our teacher -->
-<!-- Start footer -->
+
+ <!-- Start footer -->
 <footer id="mu-footer">
-  <!-- start footer top -->
-  <div class="mu-footer-top">
-    <div class="container">
-      <div class="mu-footer-top-area">
-        <div class="row">
-          <div class="col-lg-6 col-md-3 col-sm-3">
-            <div class="mu-footer-widget">
-              <h4>News letter</h4>
-              <p>Get latest update, news & academic offers</p>
-              <form class="mu-subscribe-form">
-                <input type="email" placeholder="Type your Email">
-                <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
-              </form>               
+    <!-- start footer top -->
+    <div class="mu-footer-top">
+      <div class="container">
+        <div class="mu-footer-top-area">
+          <div class="row">
+            <div class="col-lg-6 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>News Letter</h4>
+                <p>Get latest update, news & academic offers</p>
+                <form class="mu-subscribe-form">
+                  <input type="email" placeholder="Type your Email">
+                  <br>
+                  <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
+                </form>               
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-3 col-sm-3">
-            <div class="mu-footer-widget">
-              <h4>Contact</h4>
-              <address>
-                <p>P.O. Box 320, Ross, California 9495, USA</p>
-                <p>Phone: (415) 453-1568 </p>
-                <p>Website: www.markups.io</p>
-                <p>Email: info@markups.io</p>
-              </address>
+            <div class="col-lg-6 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Contact</h4>
+                <address>
+                  <p>Bangalore, Karnataka, India.</p>
+                  <p>Phone: +91 807 227 0478 </p>
+                  <p>Website: www.vecan.co</p>
+                  <p>Email: san@vecan.co</p>
+                </address>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- end footer top -->
-  <!-- start footer bottom -->
-  <div class="mu-footer-bottom">
-    <div class="container">
-      <div class="mu-footer-bottom-area">
-        <p>&copy; All Right Reserved. Designed by <a href="#" rel="nofollow">Vecan.co</a></p>
+    <!-- end footer top -->
+    <!-- start footer bottom -->
+    <div class="mu-footer-bottom">
+      <div class="container">
+        <div class="mu-footer-bottom-area">
+            <p>&copy; All Right Reserved. Designed by <a href= "https://www.vecan.co"  style="color:#29ca8e">Vecan</a></p>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- end footer bottom -->
-</footer>
-<!-- End footer -->
-   
- 
+    <!-- end footer bottom -->
+  </footer>
+  <!-- End footer -->

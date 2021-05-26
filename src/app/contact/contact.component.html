@@ -1,152 +1,111 @@
-  <!-- Start menu -->
-  <section id="mu-menu">
-    <nav class="navbar navbar-default" role="navigation">  
-      <div class="container">
-        <div class="navbar-header">
-          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- LOGO -->              
-          <!-- TEXT BASED LOGO -->
-          <a href="index.html"><img src="assets/img/image.png" alt=""></a>
-          <!-- IMG BASED LOGO  -->
-          <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-<<<<<<< HEAD
-            <li><a [routerLink]="['/home']">Home</a></li>   
-=======
-            <li><a [routerLink]="['/#']">Home</a></li>
->>>>>>> 7bc9e3b05b2f92742cede063d061fdebd706444e
-            <li><a [routerLink]="['/about']">About Us</a></li>          
-            <li class="active"><a [routerLink]="['/contact']">Contact</a></li>
-            <li><a [routerLink]="['/login']">Login</a></li>               
-            <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
-          </ul>                     
-        </div><!--/.nav-collapse -->         
-      </div>     
-    </nav>
-  </section>
-  <!-- End menu -->
-  <!-- Start search box -->
-  <div id="mu-search">
-    <div class="mu-search-area">      
-      <button class="mu-search-close"><span class="fa fa-close"></span></button>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">            
-            <form class="mu-search-form">
-              <input type="search" placeholder="Type Your Keyword(s) & Hit Enter">              
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End search box -->  
- 
-  <!-- Start contact  -->
-  <section id="mu-contact">
+<!-- MENU -->
+<section class="navbar custom-navbar navbar-fixed-top" role="navigation">
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="mu-contact-area">
-           <!-- start title -->
-           <div class="mu-title">
-             <h2>Get in Touch</h2>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores ut laboriosam corporis doloribus, officia, accusamus illo nam tempore totam alias!</p>
-           </div>
-           <!-- end title -->
-           <!-- start contact content -->
-           <div class="mu-contact-content">           
+
+         <div class="navbar-header">
+              <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <span class="icon icon-bar"></span>
+                   <span class="icon icon-bar"></span>
+                   <span class="icon icon-bar"></span>
+              </button>
+
+              <!-- lOGO TEXT HERE -->
+              <a href="#" class="navbar-brand"><img alt="" src="assets/images/menubar.jpg" width=55 height=55></a>
+         </div>
+
+         <!-- MENU LINKS -->
+         <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-nav-first">
+               <li><a [routerLink]="['/home']">Home</a></li>
+               <li><a [routerLink]="['/about']">About Us</a></li>
+               <li class="active"><a [routerLink]="['/contact']">Contact</a></li>
+               <li><a [routerLink]="['/login']">Login</a></li>
+          </ul>
+
+         
+     </div>
+
+    </div>
+</section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
              <div class="row">
-               <div class="col-md-6">
-                 <div class="mu-contact-left">
-                   <form class="contactform">                  
-                     <p class="comment-form-author">
-                       <label for="author">Name <span class="required">*</span></label>
-                       <input type="text" required="required" size="30" value="" name="author">
-                     </p>
-                     <p class="comment-form-email">
-                       <label for="email">Email <span class="required">*</span></label>
-                       <input type="email" required="required" aria-required="true" value="" name="email">
-                     </p>
-                     <p class="comment-form-url">
-                       <label for="subject">Subject</label>
-                       <input type="text" name="subject">  
-                     </p>
-                     <p class="comment-form-comment">
-                       <label for="comment">Message</label>
-                       <textarea required="required" aria-required="true" rows="8" cols="45" name="comment"></textarea>
-                     </p>                
-                     <p class="form-submit">
-                       <input type="submit" value="Send Message" class="mu-post-btn" name="submit">
-                     </p>        
-                   </form>
-                 </div>
-               </div>
-               <div class="col-md-6">
-                 <div class="mu-contact-right">
-                  <img src="assets/img/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
-                 </div>
-               </div>
+
+                  <div class="col-md-6 col-sm-12">
+                       <form id="contact-form" role="form" action="" method="post">
+                            <div class="section-title">
+                                 <h2>Contact Us</h2> <p>We love conversations, let us talk!</p>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12">
+                                 <input type="text" class="form-control" placeholder="Enter full name" name="name" required="">
+                  
+                                 <input type="email" class="form-control" placeholder="Enter email address" name="email" required="">
+
+                                 <textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required=""></textarea>
+                            </div>
+
+                            <div class="col-md-4 col-sm-12">
+                                 <input type="submit" class="form-control" name="send message" value="Send Message">
+                            </div>
+
+                       </form>
+                  </div>
+
+                  <div class="col-md-6 col-sm-12">
+                       <div class="contact-image">
+                            <img src="assets/images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                       </div>
+                  </div>
+
              </div>
-           </div>
-           <!-- end contact content -->
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- End contact  -->
-  
- 
-  <!-- Start footer -->
+   </section> 
+   
+ <!-- Start footer -->
 <footer id="mu-footer">
-  <!-- start footer top -->
-  <div class="mu-footer-top">
-    <div class="container">
-      <div class="mu-footer-top-area">
-        <div class="row">
-          <div class="col-lg-6 col-md-3 col-sm-3">
-            <div class="mu-footer-widget">
-              <h4>News letter</h4>
-              <p>Get latest update, news & academic offers</p>
-              <form class="mu-subscribe-form">
-                <input type="email" placeholder="Type your Email">
-                <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
-              </form>               
+    <!-- start footer top -->
+    <div class="mu-footer-top">
+      <div class="container">
+        <div class="mu-footer-top-area">
+          <div class="row">
+            <div class="col-lg-6 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>News Letter</h4>
+                <p>Get latest update, news & academic offers</p>
+                <form class="mu-subscribe-form">
+                  <input type="email" placeholder="Type your Email">
+                  <br>
+                  <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
+                </form>               
+              </div>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-3 col-sm-3">
-            <div class="mu-footer-widget">
-              <h4>Contact</h4>
-              <address>
-                <p>P.O. Box 320, Ross, California 9495, USA</p>
-                <p>Phone: (415) 453-1568 </p>
-                <p>Website: www.markups.io</p>
-                <p>Email: info@markups.io</p>
-              </address>
+            <div class="col-lg-6 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                <h4>Contact</h4>
+                <address>
+                  <p>Bangalore, Karnataka, India.</p>
+                  <p>Phone: +91 807 227 0478 </p>
+                  <p>Website: www.vecan.co</p>
+                  <p>Email: san@vecan.co</p>
+                </address>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- end footer top -->
-  <!-- start footer bottom -->
-  <div class="mu-footer-bottom">
-    <div class="container">
-      <div class="mu-footer-bottom-area">
-        <p>&copy; All Right Reserved. Designed by <a href="#" rel="nofollow">Vecan.co</a></p>
+    <!-- end footer top -->
+    <!-- start footer bottom -->
+    <div class="mu-footer-bottom">
+      <div class="container">
+        <div class="mu-footer-bottom-area">
+            <p>&copy; All Right Reserved. Designed by <a href= "https://www.vecan.co"  style="color:#29ca8e">Vecan</a></p>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- end footer bottom -->
-</footer>
-<!-- End footer -->
+    <!-- end footer bottom -->
+  </footer>
+  <!-- End footer -->
