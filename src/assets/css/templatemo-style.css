@@ -703,7 +703,7 @@ https://templatemo.com/tm-516-known
   }
 
   #contact-form .form-control {
-    border: 0;
+    border: 1px solid;
     border-radius: 5px;
     box-shadow: #fff;
     margin: 10px 0;
@@ -717,10 +717,11 @@ https://templatemo.com/tm-516-known
     border-radius: 50px;
     border: 1px solid;
     font-weight: bold;
+    background:#29ca8e;
   }
 
   #contact-form input[type='submit']:hover {
-    background:#29ca8e;
+   
     border-color: #ecdede;
     color: #000;
     font-weight: bold;
